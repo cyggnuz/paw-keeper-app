@@ -1,0 +1,136 @@
+
+.deworming-history-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  margin: 30px auto;
+  max-width: 800px;
+  animation: slideInFromRight 0.5s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.deworming-history-container .history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+}
+
+.deworming-history-container h2 {
+  font-size: 2.2em;
+  color: #6a0dad; /* Morado más oscuro */
+  margin: 0;
+}
+
+.deworming-history-container .add-button {
+  background-color: #9C27B0; /* Morado principal */
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.deworming-history-container .add-button:hover {
+  background-color: #7B1FA2;
+  transform: translateY(-2px);
+}
+
+.deworming-history-container .no-records-message {
+  text-align: center;
+  color: #777;
+  font-size: 1.1em;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  border: 1px dashed #ddd;
+}
+
+.deworming-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deworming-item {
+  background-color: #fdfcff; /* Un blanco muy suave */
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.deworming-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+}
+
+.deworming-details h3 {
+  margin: 0 0 10px 0;
+  color: #4a4a4a;
+  font-size: 1.3em;
+}
+
+.deworming-details p {
+  margin: 5px 0;
+  color: #666;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+
+.deworming-actions {
+  display: flex;
+  gap: 10px; /* Espacio entre botones de acción */
+}
+
+.deworming-actions button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.deworming-actions .edit-button {
+  background-color: #8D6E63; /* Marrón suave */
+  color: white;
+}
+
+.deworming-actions .edit-button:hover {
+  background-color: #6D4C41;
+  transform: translateY(-1px);
+}
+
+.deworming-actions .delete-button {
+  background-color: #e57373; /* Rojo suave */
+  color: white;
+}
+
+.deworming-actions .delete-button:hover {
+  background-color: #d32f2f;
+  transform: translateY(-1px);
+}
